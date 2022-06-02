@@ -1,0 +1,15 @@
+/* Below three links are for google fonts */
+
+h1 {
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.5;
+
+}
+
+
+#title {
+  background-color: #ff4c68;
+}

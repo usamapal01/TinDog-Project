@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat|Ubuntu" rel="stylesheet">
 
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -29,13 +30,13 @@
 
   <section id="title">
 
-
+  <!-- This will put everything in the middle -->
   <div class="container-fluid">   <!-- nav bar and title resides in this div -->
 
 
     <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="">Tindog</a>
+        <a class="navbar-brand" href="">tindog</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,21 +56,19 @@
     </nav>
 
 
-
-
     <!-- Title -->
 
     <div class="row">
       <div class="col-lg-6">
         <h1>Meet new and interesting dogs nearby.</h1>
-        <button type="button" class="btn btn-dark btn-lg">
+        <button type="button" class="btn btn-dark btn-lg download-button">
           <ion-icon name="logo-apple"></ion-icon> Download</button>
-        <button type="button" class="btn btn-outline-light btn-lg">
+        <button type="button" class="btn btn-outline-light btn-lg download-button">
           <ion-icon name="logo-google-playstore"></ion-icon> Download</button>
       </div>
 
       <div class="col-lg-6">
-        <img src="images/iphone6.png" alt="iphone-mockup">
+        <img class="title-image"src="images/iphone6.png" alt="iphone-mockup" >
       </div>
 
     </div>
@@ -81,14 +80,34 @@
 
   <section id="features">
 
-    <h3>Easy to use.</h3>
-    <p>So easy to use, even your dog could do it.</p>
+      <div class="row">
+        <div class="feature-box col-lg-4 col-md-12">
+          <ion-icon class="feature-box-icon" name="checkmark-circle"></ion-icon>
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
 
-    <h3>Elite Clientele</h3>
-    <p>We have all the dogs, the greatest dogs.</p>
+        <div class=" feature-box col-lg-4 col-md-12">
+          <ion-icon class="feature-box-icon" name="people-circle-outline"></ion-icon>
+          <h3>Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
 
-    <h3>Guaranteed to work.</h3>
-    <p>Find the love of your dog's life or your money back.</p>
+        <div class="feature-box col-lg-4 col-md-12">
+          <ion-icon class="feature-box-icon" name="heart"></ion-icon>
+          <h3>Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
 
   </section>
 

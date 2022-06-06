@@ -30,49 +30,53 @@
 
   <section id="title">
 
-  <!-- This will put everything in the middle -->
-  <div class="container-fluid">   <!-- nav bar and title resides in this div -->
+    <!-- This will put everything in the middle -->
+    <div class="container-fluid">
+      <!-- nav bar and title resides in this div -->
 
 
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="">tindog</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto"> <!--this has been replaced with ms-auto instead of ml-auto -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <!--this has been replaced with ms-auto instead of ml-auto -->
             <li class="nav-item">
-                <a class="nav-link" href="">Contact</a>
+              <a class="nav-link" href="">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">Pricing</a>
+              <a class="nav-link" href="">Pricing</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">Download</a>
+              <a class="nav-link" href="">Download</a>
             </li>
-        </ul>
-     </div>
-    </nav>
+          </ul>
+        </div>
+      </nav>
 
 
-    <!-- Title -->
+      <!-- Title -->
 
-    <div class="row">
-      <div class="col-lg-6">
-        <h1>Meet new and interesting dogs nearby.</h1>
-        <button type="button" class="btn btn-dark btn-lg download-button">
-          <ion-icon name="logo-apple"></ion-icon> Download</button>
-        <button type="button" class="btn btn-outline-light btn-lg download-button">
-          <ion-icon name="logo-google-playstore"></ion-icon> Download</button>
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button">
+            <ion-icon name="logo-apple"></ion-icon> Download
+          </button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button">
+            <ion-icon name="logo-google-playstore"></ion-icon> Download
+          </button>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
+
       </div>
-
-      <div class="col-lg-6">
-        <img class="title-image"src="images/iphone6.png" alt="iphone-mockup" >
-      </div>
-
     </div>
-  </div>
   </section>
 
 
@@ -80,34 +84,24 @@
 
   <section id="features">
 
-      <div class="row">
-        <div class="feature-box col-lg-4 col-md-12">
-          <ion-icon class="feature-box-icon" name="checkmark-circle"></ion-icon>
-          <h3>Easy to use.</h3>
-          <p>So easy to use, even your dog could do it.</p>
-        </div>
+    <div class="row">
+      <div class="feature-box col-lg-4 col-md-12">
+        <ion-icon class="feature-box-icon" name="checkmark-circle"></ion-icon>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+      </div>
 
-        <div class=" feature-box col-lg-4 col-md-12">
-          <ion-icon class="feature-box-icon" name="people-circle-outline"></ion-icon>
-          <h3>Elite Clientele</h3>
-          <p>We have all the dogs, the greatest dogs.</p>
-        </div>
+      <div class=" feature-box col-lg-4 col-md-12">
+        <ion-icon class="feature-box-icon" name="people-circle-outline"></ion-icon>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>
+      </div>
 
-        <div class="feature-box col-lg-4 col-md-12">
-          <ion-icon class="feature-box-icon" name="heart"></ion-icon>
-          <h3>Guaranteed to work.</h3>
-          <p>Find the love of your dog's life or your money back.</p>
-        </div>
-
-
-
-
-
-
-
-
-
-
+      <div class="feature-box col-lg-4 col-md-12">
+        <ion-icon class="feature-box-icon" name="heart"></ion-icon>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
 
   </section>
 
@@ -116,13 +110,34 @@
 
   <section id="testimonials">
 
-    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-    <img src="images/dog-img.jpg" alt="dog-profile">
-    <em>Pebbles, New York</em>
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+        </div>
 
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+
+        </div>
+      </div>
+
+      <!-- Below code will make sure that buttons work -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+
+
+
 
   </section>
 
@@ -130,10 +145,10 @@
   <!-- Press -->
 
   <section id="press">
-    <img src="images/techcrunch.png" alt="tc-logo">
-    <img src="images/tnw.png" alt="tnw-logo">
-    <img src="images/bizinsider.png" alt="biz-insider-logo">
-    <img src="images/mashable.png" alt="mashable-logo">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
 
   </section>
 

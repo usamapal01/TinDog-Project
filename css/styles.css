@@ -11,14 +11,6 @@ body {
 }
 
 
-
-
-
-.rotateImage{
-  transform: rotate(25deg);
-  padding-top: 2.5rem;
-}
-
 h1 {
 
   font-family: 'Montserrat', sans-serif;
@@ -77,13 +69,21 @@ p{
 
 .title-image {
   width: 60%;
-  transform: rotate(25deg)
+  transform: rotate(25deg);
+  position: absolute;
+}
+
+.title-image-container {
+  position: relative;
 }
 
 /* Features */
 
 #features{
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box{

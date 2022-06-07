@@ -106,7 +106,7 @@ p{
 
 #testimonials {
   text-align: center;
-  background-color: #ff4c68;
+  background-color: #ef8172;
   color: #fff;
 }
 
@@ -122,7 +122,7 @@ p{
 
 /* Press Section  */
 #press {
-  background-color: #ff4c68;
+  background-color: #ef8172;
   text-align: center;
   padding-bottom: 3%;
 }
@@ -141,4 +141,35 @@ p{
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+/* Call to action Section */
+#cta {
+  background-color: #ff4c68;
+  color: white;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.cta-heading {
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+/* Footer Section */
+
+
+/* if width goes below 1028px it will trigger below properties to the website */
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
 }

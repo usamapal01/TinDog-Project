@@ -159,6 +159,19 @@ p{
 }
 
 /* Footer Section */
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.social-icon {
+  margin: 20px 10px;
+  font-size: 32px;
+}
+
+.social-icon:hover{
+  font-size: 64px;
+}
 
 
 /* if width goes below 1028px it will trigger below properties to the website */

@@ -17,6 +17,8 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- Css style sheet link -->
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- below two links came from ionicons https://ionic.io/ionicons/usage
@@ -30,7 +32,7 @@
 
   <section id="title">
 
-    <!-- This will put everything in the middle -->
+
     <div class="container-fluid">
       <!-- nav bar and title resides in this div -->
 
@@ -62,7 +64,7 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <h1>Meet new and interesting dogs nearby.</h1>
+          <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
           <button type="button" class="btn btn-dark btn-lg download-button">
             <ion-icon name="logo-apple"></ion-icon> Download
           </button>
@@ -84,25 +86,29 @@
 
   <section id="features">
 
-    <div class="row">
-      <div class="feature-box col-lg-4 col-md-12">
-        <ion-icon class="feature-box-icon" name="checkmark-circle"></ion-icon>
-        <h3>Easy to use.</h3>
-        <p>So easy to use, even your dog could do it.</p>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col-lg-4 col-md-12">
+          <ion-icon class="feature-box-icon" name="checkmark-circle"></ion-icon>
+          <h3 class="feature-title">Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+
+        <div class=" feature-box col-lg-4 col-md-12">
+          <ion-icon class="feature-box-icon" name="people-circle-outline"></ion-icon>
+          <h3 class="feature-title">Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+
+        <div class="feature-box col-lg-4 col-md-12">
+          <ion-icon class="feature-box-icon" name="heart"></ion-icon>
+          <h3 class="feature-title">Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
       </div>
 
-      <div class=" feature-box col-lg-4 col-md-12">
-        <ion-icon class="feature-box-icon" name="people-circle-outline"></ion-icon>
-        <h3>Elite Clientele</h3>
-        <p>We have all the dogs, the greatest dogs.</p>
       </div>
-
-      <div class="feature-box col-lg-4 col-md-12">
-        <ion-icon class="feature-box-icon" name="heart"></ion-icon>
-        <h3>Guaranteed to work.</h3>
-        <p>Find the love of your dog's life or your money back.</p>
-      </div>
-
   </section>
 
 
@@ -112,13 +118,13 @@
 
     <div id="testimonial-carousel" class="carousel slide" data-ride="false">
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
           <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
           <em>Pebbles, New York</em>
         </div>
 
-        <div class="carousel-item">
+        <div class="carousel-item container-fluid">
           <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
           <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
           <em>Beverly, Illinois</em>
@@ -154,7 +160,7 @@
   <section id="pricing">
 
 
-    <h2>A Plan for Every Dog's Needs</h2>
+    <h2 class="section-heading">A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
 
@@ -168,7 +174,7 @@
             <h3>Chihuahua</h3>
           </div>
           <div class="card-body">
-            <h2>Free</h2>
+            <h2 class="price-text">Free</h2>
             <p>5 Matches Per Day</p>
             <p>10 Messages Per Day</p>
             <p>Unlimited App Usage</p>
@@ -183,7 +189,7 @@
             <h3>Labrador</h3>
           </div>
           <div class="card-body">
-            <h2>$49 / mo</h2>
+            <h2 class="price-text">$49 / mo</h2>
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
             <p>Unlimited App Usage</p>
@@ -198,7 +204,7 @@
             <h3>Mastiff</h3>
           </div>
           <div class="card-body">
-            <h2>$99 / mo</h2>
+            <h2 class="price-text">$99 / mo</h2>
             <p>Pirority Listing</p>
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
@@ -214,14 +220,19 @@
   <!-- Call to Action -->
 
   <section id="cta">
+    <div class="container-fluid">
 
-    <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+
+    <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>
     <button type="button" class="btn btn-dark btn-lg download-button">
       <ion-icon name="logo-apple"></ion-icon> Download
     </button>
     <button type="button" class="btn btn-outline-light btn-lg download-button">
       <ion-icon name="logo-google-playstore"></ion-icon> Download
     </button>
+
+
+  </div>
 
   </section>
 
@@ -230,11 +241,15 @@
 
   <footer id="footer">
 
+    <div class="container-fluid">
+
+
     <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
     <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
     <ion-icon class="social-icon" name="mail-outline"></ion-icon>
     <p>© Copyright TinDog</p>
 
+  </div>
 
   </footer>
 
